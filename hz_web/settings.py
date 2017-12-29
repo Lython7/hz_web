@@ -121,4 +121,8 @@ USE_TZ = False # 选择Fasle使修改TIME_ZONE的时区生效。
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 静态文件地址
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') # 部署时需要使用

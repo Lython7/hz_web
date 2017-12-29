@@ -1,10 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hz</title>
+    <title>禾中产品销售有限公司</title>
+    //加一个小图标
+    <link rel="stylesheet" type="text/css" href={% static 'index/css/reset.css' %}/>
+    <link rel="stylesheet" type="text/css" href={% static "index/bootstrap/bootstrap.min.css" %}/>
+    <script src={% static "index/bootstrap/jquery.min.js" %} type="text/javascript" charset="utf-8"></script>
+    <script src={% static "index/bootstrap/bootstrap.min.js" %} type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href={% static "index/css/index.css" %}/>
 </head>
 <body>
-hello hz
+	<header>
+		<div class="container-fluid">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 head-nav">
+				<div class="logo">
+					<img src={% static "index/img/logo.jpg" %}/>
+					<span>禾中产品销售有限公司</span>
+				</div>
+				<div class="navList">
+					<ul>
+						<li>首页</li>
+						<li>新闻中心</li>
+						<li>项目介绍</li>
+						<li>合作共赢</li>
+						<li>关于我们</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</header>
+	<section class="banner">
+		
+	</section>
 </body>
 </html>
