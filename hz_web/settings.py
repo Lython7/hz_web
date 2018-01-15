@@ -46,8 +46,10 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAdminUser',
+        # 'rest_framework.pagination.LimitOffsetPagination',
+        # 'rest_framework.pagination.PageNumberPagination',
     ],
-    'PAGE_SIZE': 10,
+    # 'PAGE_SIZE': 100,
 }
 
 
@@ -140,3 +142,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') # 部署时需要使用
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+

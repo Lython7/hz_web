@@ -13,11 +13,11 @@ class News_center(models.Model):
         (True, '删除'),
     )
     news_title = models.CharField(max_length=50, verbose_name='新闻标题', null=False)
-    news_time = models.CharField(max_length=30, verbose_name='新闻时间', null=False)
-    news_image = models.ImageField(verbose_name='新闻照片', null=False)# 路径
+    news_time = models.DateTimeField(verbose_name='新闻时间', null=False)
+    news_image = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片', null=False)# 路径
     news_content = models.TextField(max_length=3072, verbose_name='新闻内容', null=False)
     created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='编辑时间', null=False)
-    created_by = models.ForeignKey(User, verbose_name='编辑人', null=False)# 编辑人 editable=False default =当前登录的id
+    created_by = models.ForeignKey('auth.User', verbose_name='编辑人', null=False)# 编辑人 editable=False default =当前登录的id
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')
 
     class Meta:
