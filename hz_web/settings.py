@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'uprofile',# 用户属性字段拓展表
 ]
 
+#api框架
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAdminUser',
@@ -53,6 +54,11 @@ REST_FRAMEWORK = {
     # 'PAGE_SIZE': 100,
 }
 
+# username、邮箱、手机等作为用户名来登录
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',# 标准username验证登录
+    'uprofile.authentication.EmailAuthBackend',# 邮箱作为用户名登录
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
