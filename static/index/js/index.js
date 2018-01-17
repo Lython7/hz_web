@@ -1,5 +1,5 @@
 $(function () {
-    var url_ = '../data/news.json';
+    var url_ = 'api/news/';
 
     $.ajax({
         url: url_,

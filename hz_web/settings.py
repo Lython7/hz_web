@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'index',# 禾中销售首页
+    'uprofile',# 用户属性字段拓展表
 ]
 
 REST_FRAMEWORK = {
@@ -145,5 +146,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') # 部署时需要使用
 
 
 MEDIA_URL = '/media/'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

@@ -1,11 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-#profile
-class uprofile():
-    pass
-
-
 # 新闻中心
 class News_center(models.Model):
     choices = (
@@ -22,7 +17,7 @@ class News_center(models.Model):
 
     class Meta:
         verbose_name = '新闻中心'
-        verbose_name_plural = '新闻中心'
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.news_title
@@ -48,7 +43,7 @@ class Recruitment_info(models.Model):
 
     class Meta:
         verbose_name = '招聘信息'
-        verbose_name_plural = '招聘信息'
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.position_name
