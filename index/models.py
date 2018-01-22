@@ -16,6 +16,7 @@ class News_center(models.Model):
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')
 
     class Meta:
+        # db_table = ''
         verbose_name = '新闻中心'
         verbose_name_plural = verbose_name
 
@@ -42,6 +43,7 @@ class Recruitment_info(models.Model):
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')# 逻辑删除
 
     class Meta:
+        # db_table = ''
         verbose_name = '招聘信息'
         verbose_name_plural = verbose_name
 

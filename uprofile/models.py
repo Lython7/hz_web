@@ -9,7 +9,7 @@ class Uprofile(models.Model):
     '''
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='用户')
     uname = models.CharField(max_length=32, null=True, verbose_name='用户姓名')
-    ucellphone = models.CharField(max_length=11, null=True, verbose_name='手机号码')
+    ucellphone = models.CharField(max_length=11, null=True, verbose_name='手机号码', unique=True)
     uposition = models.CharField(max_length=32, null=True, verbose_name='工作岗位')
 
     class Meta:

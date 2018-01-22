@@ -5,17 +5,8 @@ from .models import *
 
 # Register your models here.
 
-# userprofile
-# class AccountInline(admin.StackedInline):
-#     model = Account
-#     can_delete = False
-#     verbose_name_plural = 'account'
-
-# class UserAdmin(BaseUserAdmin):
-#     inlines = (AccountInline,)
-
-# admin.site.unregister(User)
-# admin.site.register(User, UserAdmin)
+# 后台django管理名字修改
+admin.site.site_header = "禾中销售管理后台"
 
 
 class News_center_Admin(admin.ModelAdmin):

@@ -48,10 +48,10 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAdminUser',
-        # 'rest_framework.pagination.LimitOffsetPagination',
-        # 'rest_framework.pagination.PageNumberPagination',
     ],
-    # 'PAGE_SIZE': 100,
+
+        # 'rest_framework.pagination.LimitOffsetPagination',# ？？？
+        # 'rest_framework.pagination.PageNumberPagination',# ？？？
 }
 
 # username、邮箱、手机等作为用户名来登录
@@ -94,6 +94,7 @@ WSGI_APPLICATION = 'hz_web.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# 使用环境变量配置
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -142,6 +143,7 @@ USE_TZ = False # 选择Fasle使修改TIME_ZONE的时区生效。
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+# 静态文件配置
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -150,7 +152,7 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') # 部署时需要使用
 
-
+# 文件、图片上传路径
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -19,7 +19,7 @@ from django.contrib import admin
 import index
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),# 上线时 修改下路径
 
     url(r'^', include('index.urls')),
 ]
