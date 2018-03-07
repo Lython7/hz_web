@@ -17,9 +17,19 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 import index
+# from apscheduler.schedulers.background import BackgroundScheduler
+# import time
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),# 上线时 修改下路径
 
     url(r'^', include('index.urls')),
 ]
+
+# sched = BackgroundScheduler(daemonic=False)
+# sched.start()
+#
+# def job():
+#     print(1)
+#
+# sched.add_job(job, 'interval', seconds=5)

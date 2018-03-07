@@ -17,6 +17,7 @@ class News_center(models.Model):
 
     class Meta:
         # db_table = ''
+        ordering = ('created_time', )
         verbose_name = '新闻中心'
         verbose_name_plural = verbose_name
 
@@ -44,6 +45,7 @@ class Recruitment_info(models.Model):
 
     class Meta:
         # db_table = ''
+        ordering = ('created_time', )
         verbose_name = '招聘信息'
         verbose_name_plural = verbose_name
 
