@@ -18,6 +18,9 @@ class StandardResultsSetPagination(PageNumberPagination):
 
 
 # 主页
+
+
+
 def index(request):
     return render(request, 'index/index.html', context={})
 def head(request):
