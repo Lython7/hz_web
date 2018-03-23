@@ -21,11 +21,11 @@
 						<span class="title">禾中产品销售有限公司</span>
 					</div>
 					<ul class="nav">
-						<li><a href="index.html" class="active">首页</a></li>
-						<li><a href="news.html">新闻中心</a></li>
-						<li><a href="ability.html">产品</a></li>
-						<li><a href="strength.html">服务</a></li>
-						<li><a href="about.html">关于我们</a></li>
+						<li><a href={% url 'index' %} class="active">首页</a></li>
+						<li><a href={% url 'news' %}>新闻中心</a></li>
+						<li><a href={% url 'ability' %}>产品</a></li>
+						<li><a href={% url 'strength' %}>服务</a></li>
+						<li><a href={% url 'about' %}>关于我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,19 +37,19 @@
 			<div class="content">
 				<!--导航-->
 				<ul class="con_nav">
-					<li><a class="news" href="news.html">
+					<li><a class="news" href={% url 'news' %}>
                         <i></i>
 						<span>新闻中心</span>
 					</a></li>
-					<li><a class="ability" href="ability.html">
+					<li><a class="ability" href={% url 'ability' %}>
 						<i></i>
 						<span>产品</span>
 					</a></li>
-					<li><a class="strength" href="strength.html">
+					<li><a class="strength" href={% url 'strength' %}>
 						<i></i>
 						<span>服务</span>
 					</a></li>
-					<li><a class="cooperation" href="about.html">
+					<li><a class="cooperation" href={% url 'about' %}>
 						<i></i>
 						<span>关于我们</span>
 					</a></li>
