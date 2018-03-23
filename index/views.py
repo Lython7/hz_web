@@ -20,7 +20,8 @@ class StandardResultsSetPagination(PageNumberPagination):
 # 主页
 def index(request):
     return render(request, 'index/index.html', context={})
-
+def head(request):
+    return render(request, 'index/head.html', context={})
 def news(request):
     return render(request, 'index/news.html', context={})
 def newsinfo(request):
@@ -51,6 +52,7 @@ def newsshow(request):
         'second': queryset2,
         'third':queryset3}
     return HttpResponse(json.dumps(dic), content_type='application/json')
+
 
 
 
