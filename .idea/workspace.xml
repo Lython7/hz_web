@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2ae728-f18d-413c-bc05-f6aa15d54462" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hz_web.iml" afterPath="$PROJECT_DIR$/.idea/hz_web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uprofile/migrations/0002_auto_20180323_0907.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/urls.py" afterPath="$PROJECT_DIR$/index/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/index/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/models.py" afterPath="$PROJECT_DIR$/index/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uprofile/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/uprofile/migrations/0001_initial.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +35,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -57,41 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="14" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="174">
+              <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -99,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uprofile/authentication.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hz_web/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="-414">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -117,6 +89,16 @@
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index/migrations/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,10 +174,11 @@
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/uprofile/serializers.py" />
         <option value="$PROJECT_DIR$/uprofile/authentication.py" />
-        <option value="$PROJECT_DIR$/index/models.py" />
         <option value="$PROJECT_DIR$/index/serializers.py" />
         <option value="$PROJECT_DIR$/index/views.py" />
         <option value="$PROJECT_DIR$/index/urls.py" />
+        <option value="$PROJECT_DIR$/index/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/index/models.py" />
       </list>
     </option>
   </component>
@@ -243,6 +226,35 @@
               <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="hz_web" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hz_web" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hz_web" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hz_web" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="news_pic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hz_web" type="462c0819:PsiDirectoryNode" />
+              <item name="uprofile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hz_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hz_web" type="462c0819:PsiDirectoryNode" />
+              <item name="uprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -475,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521772742362</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="新闻接口">
+      <created>1521773224212</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1521773224212</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,27 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/ENV/djangoENV/Lib/site-packages/django/contrib/admin/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="1996" column="10" lean-forward="true" selection-start-line="1996" selection-start-column="6" selection-end-line="1996" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/ENV/djangoENV/Lib/site-packages/django/contrib/admin/templates/admin/edit_inline/tabular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/ENV/djangoENV/Lib/site-packages/django/contrib/admin/templates/registration/password_change_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/ENV/djangoENV/Lib/site-packages/django/contrib/admin/templates/registration/password_reset_complete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -795,14 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hz_web/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -848,16 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hz_web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -868,12 +848,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/models.py">
+    <entry file="file://$PROJECT_DIR$/index/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="14" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="37" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -888,12 +868,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/urls.py">
+    <entry file="file://$PROJECT_DIR$/index/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        <state relative-caret-position="378">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hz_web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/ENV/2.0_djangoENV/Lib/site-packages/django/db/models/fields/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="360" column="8" lean-forward="false" selection-start-line="360" selection-start-column="8" selection-end-line="360" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="110" lean-forward="false" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

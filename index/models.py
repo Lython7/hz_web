@@ -27,14 +27,14 @@ class News_center(models.Model):
     news_title = models.CharField(max_length=50, verbose_name='新闻标题', null=False)
     display_area = models.IntegerField(choices=choices_area, default=2)
     news_time = models.DateTimeField(verbose_name='新闻时间', null=False)
-    news_image1 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片1', null=True)# 路径
-    news_image2 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片2', null=True)# 路径
-    news_image3 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片3', null=True)# 路径
-    news_image4 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片4', null=True)# 路径
-    news_image5 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片5', null=True)# 路径
+    news_image1 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片1')# 路径
+    news_image2 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片2', null=True, blank=True, default='')# 路径
+    news_image3 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片3', null=True, blank=True, default='')# 路径
+    news_image4 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片4', null=True, blank=True, default='')# 路径
+    news_image5 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片5', null=True, blank=True, default='')# 路径
     news_content = models.TextField(max_length=3072, verbose_name='新闻内容', null=False)
     created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='编辑时间', null=False)
-    created_by = models.ForeignKey('auth.User', verbose_name='编辑人', null=False, on_delete = True, editable=False, default=User)# 编辑人 editable=False default =当前登录的id
+    created_by = models.ForeignKey('auth.User', verbose_name='编辑人', null=False, on_delete = True)# 编辑人 editable=False default =当前登录的id, editable=False, default=User
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')
 
     class Meta:
@@ -61,7 +61,7 @@ class Recruitment_info(models.Model):
     job_responsibilities = models.TextField(max_length=1024, verbose_name='岗位职责', null=False)
     position_salary = models.CharField(max_length=5, verbose_name='薪资待遇')# 薪资待遇
     created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='编辑时间', null=False)
-    created_by = models.ForeignKey(User, verbose_name='编辑人', null=False, on_delete=True, editable=False, default=User)# 编辑人 editable=False default =
+    created_by = models.ForeignKey(User, verbose_name='编辑人', null=False, on_delete=True)# 编辑人 editable=False default =, editable=False, default=User
     # created_by = models.ForeignKey(User, verbose_name='编辑人', null=False)# 编辑人 editable=False
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')# 逻辑删除
 
