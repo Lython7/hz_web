@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们-禾中产品销售有限公司</title>
+		{% include 'index/head.html' %}
+		<link rel="stylesheet" type="text/css" href={% static 'index/css/about.css' %}/>
+	</head>
+	<body>
+		{% include 'index/header.html' %}
+		<div class="banner">
+			<img src={% static 'index/img/cooperationBanner.jpg' %}/>
+		</div>
+		<section>
+			<div class="content">
+				<div class="cont">公司介绍</div>
+				<div class="myInfo">
+					<div class="imgTitle">
+						<img src={% static 'index/img/home_banner.jpg' %}/>
+					</div>
+					<p>禾中产品销售有限公司成立于2017年，公司隶属于禾中控股集团有限公司，承接禾中集团农产品贸易流通与物流销售业务，成为禾中集团农业成果对外展示的核心窗口。</p>
+					<p>通过“禾中优供（B2B）”、“禾中优选（B2C）”、“禾中便利”、   “禾中超市”、“禾中社区”“禾中溯源平台”等重要战略落地实施，树立全方位的品牌解决方案，充分发挥禾中控股集团资源优势和品牌影响力，线上线下协同发展，打造禾中产品销售全产业的智慧供应链“互联网+”服务平台，在“新零售”模式中缔造传奇。</p>
+				</div>
+				<div class="cont">联系我们</div>
+				<div class="affiliation">
+					<p>禾中产品销售有限公司</p>
+					<p>全国统一客户服务电话：400-859-9400</p>
+					<p>客服邮箱：service@hzbl360.com</p>
+					<p>地址：北京市大兴区星光视界中心1号楼A座11层</p>
+				</div>
+				<div class="links">
+					<img class="hzxs" src={% static 'index/img/hzxs.jpg' %}/>
+					<img class="hzsq" src={% static 'index/img/hzsq.jpg' %}/>
+					<img class="hzyg" src={% static 'index/img/hzyg.jpg' %}/>
+				</div>
+				<div class="linkTitle">
+					<span>禾中销售公司</span>
+					<span class="hzsq">禾中社区</span>
+					<span>禾中优供</span>
+				</div>
+			</div>
+		</section>
+		{% include 'index/footer.html' %}
+	</body>
+</html>

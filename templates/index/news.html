@@ -1,34 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>新闻中心-禾中产品销售有限公司</title>
-		<meta name="keywords" content="禾中产品,新零售,农产品">
-		<!--<meta name="description" content="美菜网 - 中国较早，口碑很好的农产品移动电商，美菜网自营涵盖：新鲜水果蔬菜、肉类、冻品、调料、熟食、饮品、日常用品等。专业配送和服务团队，美菜网让全国人民吃上放心菜！">-->
-		<link rel="icon" type="image/x-icon" href="img/hezhong.png">
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/news.css"/>
+		{% include 'index/head.html' %}
+		<link rel="stylesheet" type="text/css" href={% static 'index/css/news.css' %}/>
 	</head>
 	<body>
-		<header>
-			<div class="header">
-				<div class="h_wrap">
-					<div class="logo">
-						<img src="img/logo.png"/>
-						<span class="title">禾中产品销售有限公司</span>
-					</div>
-					<ul class="nav">
-						<li><a href="index.html">首页</a></li>
-						<li><a href="news.html" class="active">新闻中心</a></li>
-						<li><a href="ability.html">产品</a></li>
-						<li><a href="strength.html">服务</a></li>
-						<li><a href="about.html">关于我们</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
+		{% include 'index/header.html' %}
 		<div class="banner">
-			<img src="img/home_banner.jpg"/>
+			<img src={% static 'index/img/home_banner.jpg' %}/>
 		</div>
 		<section>
 			<div class="content">
@@ -73,31 +55,6 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="foot">
-				<div class="conBottom">
-					<div class="erLeft">
-						<div class="hz hzxs">
-							<img src="img/hzxs.jpg" alt="禾中销售公司" />
-							<div class="name">禾中销售公司</div>
-						</div>
-						<div class="hz hzsq">
-							<img src="img/hzsq.jpg" alt="禾中社区" />
-							<div class="name">禾中社区</div>
-						</div>
-						<div class="hz hzyg">
-							<img src="img/hzyg.jpg" alt="禾中优供" />
-							<div class="name">禾中优供</div>
-						</div>
-					</div>
-					<div class="infoRight">
-						<p>地址：北京市大兴区星光视界中心1号楼A座11层</p>
-						<p>电话：010-64986666&nbsp;&nbsp;&nbsp;400-859-9400</p>
-						<p>邮箱：service@hzbl360.com</p>
-					</div>
-				</div>
-				<div class="bei">京ICP备17061442号-1&nbsp;&nbsp;&nbsp;公网安备号11011502003046</div>
-			</div>
-		</footer>
+		{% include 'index/footer.html' %}
 	</body>
 </html>

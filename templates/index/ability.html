@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>产品-禾中产品销售有限公司</title>
+		{% include 'index/head.html' %}
+		<link rel="stylesheet" type="text/css" href={% static 'index/css/ability.css' %}/>
+	</head>
+	<body>
+		{% include 'index/header.html' %}
+		<div class="banner">
+			<img src={% static 'index/img/home_banner.jpg' %}/>
+		</div>
+		<section>
+			<div class="content">
+				<div class="cont">自有品牌产品</div>
+				<div class="proSelf">
+					<ul>
+						<li>
+							<img class="img" src={% static 'index/img/jqh.jpg' %}/>
+							<div class="title">九河泉大米</div>
+						</li>
+						<li>
+							<img class="img" src={% static 'index/img/hsl.jpg' %}/>
+							<div class="title">好思力油品</div>
+						</li>
+						<li>
+							<img class="img" src={% static 'index/img/bsx.jpg' %}/>
+							<div class="title">坝上鲜系列</div>
+						</li>
+						<li>
+							<img class="img" src={% static 'index/img/yf.jpg' %}/>
+							<div class="title">豫丰优麦</div>
+						</li>
+					</ul>
+				</div>
+				<div class="cont">品牌供应商</div>
+				<div class="supplier">
+					<div>
+						<img src={% static 'index/img/kkkl.jpg' %}/>
+						<img src={% static 'index/img/hy.jpg' %}/>
+						<img src={% static 'index/img/nfsq.jpg' %}/>
+						<img src={% static 'index/img/hn.jpg' %}/>
+						<img src={% static 'index/img/hly.jpg' %}/>
+					</div>
+					<div>
+						<img src={% static 'index/img/bskl.jpg' %}/>
+						<img src={% static 'index/img/ls.jpg' %}/>
+						<img src={% static 'index/img/ala.jpg' %}/>
+						<img src={% static 'index/img/qc.jpg' %}/>
+						<img src={% static 'index/img/ksf.jpg' %}/>
+					</div>
+				</div>
+				<div class="cont">产品溯源</div>
+				<div class="tracing">
+					<img src={% static 'index/img/cpsy_one.jpg' %}/>
+					<img src={% static 'index/img/cpsy_two.jpg' %}/>
+					<img src={% static 'index/img/cpsy_three.jpg' %}/>
+				</div>
+			</div>
+		</section>
+		{% include 'index/footer.html' %}
+	</body>
+</html>
