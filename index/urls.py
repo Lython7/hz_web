@@ -17,6 +17,8 @@ urlpatterns = [
     url(r'^ability/', views.ability, name='ability'),
     url(r'^strength/', views.strength, name='strength'),
     url(r'^about/', views.about, name='about'),
+
+    url(r'api/news/', newslist, name='newslist'),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
