@@ -2,10 +2,6 @@ $(function () {
     $.ajax({
         url: '/api/news/',
         type: 'GET',
-        data: {
-            power: sessionStorage.power
-        },
-        headers: {'Authorization': sessionStorage.token},
         success: function(data) {
             console.log(data);
             pipeDataShow(data, callback);
