@@ -1,0 +1,80 @@
+
+.banner{
+	width: 100%;
+	padding-top: 80px;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+
+.content{
+	width: 84%;
+	margin: 0 auto;
+	padding: 25px 0 20px;
+	overflow: hidden;
+}
+.content .cont{
+	font-size: 24px;
+    color: #333;
+    line-height: 36px;
+    border-left: 5px solid #377c3f;
+    padding-left: 10px;
+    margin: 15px 0;
+    letter-spacing: 5px;
+}
+.content .myInfo{
+	padding: 10px 0;
+}
+.content .myInfo p{
+	text-indent: 2em;
+	padding: 10px 0;
+	font-size: 21px;
+    line-height: 36px;
+}
+.content .myInfo .imgTitle{
+	text-align: center;
+	padding: 15px 0;
+}
+.content .imgTitle img{
+	width: 56%;
+}
+
+
+.content .affiliation{
+	padding: 10px 20px;
+}
+.content .affiliation p{
+	padding: 4px 0;
+}
+.content .links,
+.content .linkTitle{
+	overflow: hidden;
+}
+.content .links img{
+	float: left;
+	width: 18%;
+}
+.content .links .hzsq{
+	margin-top: -3px;
+	padding: 0 23%;
+}
+.content .links .hzyg{
+    margin-top: 5px;
+    width: 17.3%;
+}
+.content .linkTitle span{
+	float: left;
+	text-align: center;
+	width: 18%;
+	color: #333333;
+	font-size: 22px;
+}
+.content .linkTitle .hzsq{
+	padding: 0 23%;
+}
+
+.foot{
+	text-align: center;
+	padding: 12px 0;
+}

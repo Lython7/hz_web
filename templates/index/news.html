@@ -1,63 +1,40 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>首页-禾中产品销售有限公司</title>
+		<title>新闻中心-禾中产品销售有限公司</title>
 		<meta name="keywords" content="禾中产品,新零售,农产品">
 		<!--<meta name="description" content="美菜网 - 中国较早，口碑很好的农产品移动电商，美菜网自营涵盖：新鲜水果蔬菜、肉类、冻品、调料、熟食、饮品、日常用品等。专业配送和服务团队，美菜网让全国人民吃上放心菜！">-->
-		<link rel="icon" type="image/x-icon" href={% static 'index/img/hezhong.png' %}>
-		<link rel="stylesheet" type="text/css" href={% static 'index/css/reset.css' %}/>
-		<link rel="stylesheet" type="text/css" href={% static 'index/css/home.css' %}/>
-		<script src={% static 'index/js/jquery.min.js' %} type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="img/hezhong.png">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/news.css"/>
 	</head>
 	<body>
-{#        {% include 'index/header.html' %}#}
 		<header>
 			<div class="header">
 				<div class="h_wrap">
 					<div class="logo">
-						<img src={% static 'index/img/logo.png' %}/>
+						<img src="img/logo.png"/>
 						<span class="title">禾中产品销售有限公司</span>
 					</div>
 					<ul class="nav">
-						<li><a href={% url 'index' %} class="active">首页</a></li>
-						<li><a href={% url 'news' %}>新闻中心</a></li>
-						<li><a href={% url 'ability' %}>产品</a></li>
-						<li><a href={% url 'strength' %}>服务</a></li>
-						<li><a href={% url 'about' %}>关于我们</a></li>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="news.html" class="active">新闻中心</a></li>
+						<li><a href="ability.html">产品</a></li>
+						<li><a href="strength.html">服务</a></li>
+						<li><a href="about.html">关于我们</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 		<div class="banner">
-			<img src={% static 'index/img/home_banner.jpg' %}/>
+			<img src="img/home_banner.jpg"/>
 		</div>
 		<section>
 			<div class="content">
-				<!--导航-->
-				<ul class="con_nav">
-					<li><a class="news" href={% url 'news' %}>
-                        <i></i>
-						<span>新闻中心</span>
-					</a></li>
-					<li><a class="ability" href={% url 'ability' %}>
-						<i></i>
-						<span>产品</span>
-					</a></li>
-					<li><a class="strength" href={% url 'strength' %}>
-						<i></i>
-						<span>服务</span>
-					</a></li>
-					<li><a class="cooperation" href={% url 'about' %}>
-						<i></i>
-						<span>关于我们</span>
-					</a></li>
-				</ul>
 				<!--新闻动态-->
 				<div class="newsTitle">
 					<div class="left">新闻动态</div>
-					<a href={% static 'index/news.html' %} class="right">更多新闻&gt;&gt;</a>
 				</div>
 				<!--新闻-->
 				<div class="news_">
@@ -92,17 +69,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<!--友情链接-->
-				<div class="aboutLink">
-					<div class="linkTitle">友情链接：</div>
-					<div class="links">
-						<a href="http://www.zghzkg.com">禾中集团</a>
-						<!--<a href="http://www.yweidao.com/">禾中味道</a>
-						<a href="http://mall.yz98.cn/">有种网</a>-->
-						<a href="http://www.hnyfncp.com/">河南豫丰</a>
-						<a href="http://www.jhqmyzc.com/">九河泉</a>
-					</div>
+					<div class="more">暂无更多新闻！</div>
 				</div>
 			</div>
 		</section>
@@ -111,15 +78,15 @@
 				<div class="conBottom">
 					<div class="erLeft">
 						<div class="hz hzxs">
-							<img src={% static 'index/img/hzxs.jpg' %} alt="禾中销售公司" />
+							<img src="img/hzxs.jpg" alt="禾中销售公司" />
 							<div class="name">禾中销售公司</div>
 						</div>
 						<div class="hz hzsq">
-							<img src={% static 'index/img/hzsq.jpg' %} alt="禾中社区" />
+							<img src="img/hzsq.jpg" alt="禾中社区" />
 							<div class="name">禾中社区</div>
 						</div>
 						<div class="hz hzyg">
-							<img src={% static 'index/img/hzyg.jpg' %} alt="禾中优供" />
+							<img src="img/hzyg.jpg" alt="禾中优供" />
 							<div class="name">禾中优供</div>
 						</div>
 					</div>
@@ -133,5 +100,4 @@
 			</div>
 		</footer>
 	</body>
-<script src={% static 'index/js/index.js' %} type="text/javascript" charset="utf-8"></script>
 </html>

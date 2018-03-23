@@ -1,5 +1,111 @@
-ul,ol,li{
-	list-style: none;
-	padding: 0;
+body{font-family: "Microsoft YaHei","微软雅黑";}
+body,ul,li,p{
 	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;left: 0;
+	background-color: #fff;
+	z-index: 10;
+}
+.header .h_wrap{
+	width: 84%;
+	height: 80px;
+	margin: 0 auto;
+}
+.header .logo{
+	float: left;
+	line-height: 80px;
+	color: #779c37;
+	font-size: 24px;
+}
+.header .logo img{
+	vertical-align: middle;
+}
+.header .nav{
+	float: right;
+	overflow: hidden;
+	font-size: 19px;
+}
+.header .nav li{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+.header .nav a{
+	color: #808080;
+	padding: 6px 32px;
+}
+.header .nav a.active{
+	color: #fff;
+	background-color: #779c37;
+}
+.header .nav a:hover{
+	color: #fff;
+	background-color: #779c37;
+}
+
+.foot{
+	width: 100%;
+	background-color: #377c3f;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.foot .conBottom{
+	width: 84%;
+	margin: 0 auto;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.foot .conBottom .erLeft{
+	float: left;
+	overflow: hidden;
+	width: 50%;
+}
+.foot .conBottom .erLeft .hz{
+	float: left;
+	width: 22%;
+	margin-right: 10%;
+	text-align: center;
+}
+.foot .conBottom .erLeft .hz img{
+	width: 100%;
+	margin-bottom: 2px;
+	max-width: 130px;
+    min-width: 88px;
+}
+.foot .conBottom .infoRight{
+	float: right;
+	width: 40%;
+    font-size: 16px;
+}
+.foot .conBottom .infoRight p{
+	margin: 14px 0;
+	padding-left: 25px;
+}
+.foot .bei{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
+
+@media all and (max-width:1230px){
+	.header .logo span{
+		display: none;
+	}
+	.foot .conBottom .infoRight{
+		width: 50%;
+	}
 }
