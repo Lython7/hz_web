@@ -19,15 +19,15 @@ def index(request):
     return render(request, 'index/index.html', context={})
 
 def news(request):
-    return HttpResponse('index/news.html')
+    return render(request, 'index/news.html', context={})
 def newsinfo(request):
-    return HttpResponse('index/newsinfo.html')
+    return render(request, 'index/newsinfo.html', context={})
 def ability(request):
-    return HttpResponse('index/ability.html')
+    return render(request, 'index/ability.html', context={})
 def strength(request):
-    return HttpResponse('index/strength.html')
+    return render(request, 'index/strength.html', context={})
 def about(request):
-    return HttpResponse('index/about.html')
+    return render(request, 'index/about.html', context={})
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
