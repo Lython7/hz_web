@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from rest_framework.decorators import api_view
@@ -31,7 +32,7 @@ def about(request):
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
-    queryset = models.News_center.objects.all()
+    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2))
     serializer_class = serializers.NewsSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination

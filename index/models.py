@@ -23,6 +23,7 @@ class News_center(models.Model):
     choices_area = (
         (1,'重磅新闻，页面最上'),
         (2,'次要新闻，页面中间'),
+        (3,'其他新闻'),
     )
     news_title = models.CharField(max_length=50, verbose_name='新闻标题', null=False)
     display_area = models.IntegerField(choices=choices_area, default=2)
@@ -34,7 +35,7 @@ class News_center(models.Model):
     news_image5 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻照片5', null=True, blank=True, default='')# 路径
     news_content = models.TextField(max_length=3072, verbose_name='新闻内容', null=False)
     created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='编辑时间', null=False)
-    created_by = models.ForeignKey('auth.User', verbose_name='编辑人', null=False, on_delete = True)# 编辑人 editable=False default =当前登录的id, editable=False, default=User
+    created_by = models.ForeignKey('auth.User', verbose_name='编辑人', null=False, on_delete=True)# 编辑人 editable=False default =当前登录的id, editable=False, default=User
     is_delete = models.BooleanField(choices=choices, default=False, null=False, verbose_name='逻辑删除')
 
     class Meta:
