@@ -20,6 +20,14 @@ def index(request):
 
 def news(request):
     return HttpResponse('index/news.html')
+def newsinfo(request):
+    return HttpResponse('index/newsinfo.html')
+def ability(request):
+    return HttpResponse('index/ability.html')
+def strength(request):
+    return HttpResponse('index/strength.html')
+def about(request):
+    return HttpResponse('index/about.html')
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
