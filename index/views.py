@@ -1,3 +1,5 @@
+import json
+
 from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
@@ -39,6 +41,18 @@ class NewsViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
+
+
+def newsshow(request):
+    queryset1 = models.News_center.objects.filter(display_area=1).first()
+    queryset2 = models.News_center.objects.filter(display_area=2)[0]
+    queryset3 = models.News_center.objects.filter(display_area=2)[1]
+    dic = {'first': queryset1,
+        'second': queryset2,
+        'third':queryset3}
+    return HttpResponse(json.dumps(dic), content_type='application/json')
+
+
 
 
 # 人力资源、招兵买马

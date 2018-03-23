@@ -12,7 +12,7 @@ newslist = views.NewsViewSet.as_view({
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^news/', views.news, name='news'),
+    url(r'^news/', views.newsshow, name='news'),
     url(r'^newsinfo/', views.newsinfo, name='newsinfo'),
     url(r'^ability/', views.ability, name='ability'),
     url(r'^strength/', views.strength, name='strength'),
