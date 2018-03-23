@@ -6,7 +6,8 @@ $(function () {
             console.log(data);
             pipeDataShow(data, callback);
 
-            // kjhjkhk
+            // kjhjkhkfdsdfs
+
         },
         error: function(xhr, textStatus) {
             alert('加载失败，请稍后再试！');
