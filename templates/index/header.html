@@ -1,24 +1,18 @@
 {% load static %}
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<header>
+    <div class="header">
+        <div class="h_wrap">
             <div class="logo">
-                <img src={% static "index/img/logo.jpg" %} />
+                <img src={% static 'index/img/logo.png' %}/>
+                <span class="title">禾中产品销售有限公司</span>
             </div>
-        </div>
-        <div id="myCollapse" class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/templates/index/index.html">首页</a></li>
-                <li><a href={% static "templates/index/news.html" %}>新闻中心</a></li>
-                <li><a href="/templates/index/projects.html">项目介绍</a></li>
-                <li><a href="/templates/index/consociation.html">合作共赢</a></li>
-                <li><a href="/templates/index/about.html">关于我们</a></li>
+            <ul class="nav" id="navList">
+                <li><a href={% url 'index' %}>首页</a></li>
+                <li><a href={% url 'news' %}>新闻中心</a></li>
+                <li><a href={% url 'ability' %}>产品</a></li>
+                <li><a href={% url 'strength' %}>服务</a></li>
+                <li><a href={% url 'about' %}>关于我们</a></li>
             </ul>
         </div>
     </div>
-</nav>
+</header>

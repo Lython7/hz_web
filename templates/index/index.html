@@ -9,24 +9,7 @@
 	//	s胜多负少的
 	</head>
 	<body>
-{#        {% include 'index/header.html' %}#}
-		<header>
-			<div class="header">
-				<div class="h_wrap">
-					<div class="logo">
-						<img src={% static 'index/img/logo.png' %}/>
-						<span class="title">禾中产品销售有限公司</span>
-					</div>
-					<ul class="nav">
-						<li><a href={% url 'index' %} class="active">首页</a></li>
-						<li><a href={% url 'news' %}>新闻中心</a></li>
-						<li><a href={% url 'ability' %}>产品</a></li>
-						<li><a href={% url 'strength' %}>服务</a></li>
-						<li><a href={% url 'about' %}>关于我们</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
+        {% include 'index/header.html' %}
 		<div class="banner">
 			<img src={% static 'index/img/home_banner.jpg' %}/>
 		</div>
@@ -103,32 +86,7 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="foot">
-				<div class="conBottom">
-					<div class="erLeft">
-						<div class="hz hzxs">
-							<img src={% static 'index/img/hzxs.jpg' %} alt="禾中销售公司" />
-							<div class="name">禾中销售公司</div>
-						</div>
-						<div class="hz hzsq">
-							<img src={% static 'index/img/hzsq.jpg' %} alt="禾中社区" />
-							<div class="name">禾中社区</div>
-						</div>
-						<div class="hz hzyg">
-							<img src={% static 'index/img/hzyg.jpg' %} alt="禾中优供" />
-							<div class="name">禾中优供</div>
-						</div>
-					</div>
-					<div class="infoRight">
-						<p>地址：北京市大兴区星光视界中心1号楼A座11层</p>
-						<p>电话：010-64986666&nbsp;&nbsp;&nbsp;400-859-9400</p>
-						<p>邮箱：service@hzbl360.com</p>
-					</div>
-				</div>
-				<div class="bei">京ICP备17061442号-1&nbsp;&nbsp;&nbsp;公网安备号11011502003046</div>
-			</div>
-		</footer>
+        {% include 'index/footer.html' %}
 	</body>
 <script src={% static 'index/js/index.js' %} type="text/javascript" charset="utf-8"></script>
 </html>

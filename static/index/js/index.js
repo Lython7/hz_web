@@ -1,4 +1,5 @@
 $(function () {
+    navIndex(0);
     $.ajax({
         url: '/api/news/',
         type: 'GET',
