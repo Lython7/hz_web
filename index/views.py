@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from rest_framework.decorators import api_view
 from rest_framework.pagination import PageNumberPagination
@@ -18,7 +19,15 @@ def index(request):
     return render(request, 'index/index.html', context={})
 
 def news(request):
-    return render(request, 'index/news.html', context={})
+    return HttpResponse('index/news.html')
+def newsinfo(request):
+    return HttpResponse('index/newsinfo.html')
+def ability(request):
+    return HttpResponse('index/ability.html')
+def strength(request):
+    return HttpResponse('index/strength.html')
+def about(request):
+    return HttpResponse('index/about.html')
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
