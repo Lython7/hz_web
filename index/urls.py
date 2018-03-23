@@ -6,6 +6,10 @@ from rest_framework.documentation import include_docs_urls
 router = DefaultRouter()
 router.register(r'news', views.NewsViewSet)
 
+newslist = views.NewsViewSet.as_view({
+    'get': 'list',
+})
+
 urlpatterns = [
     url(r'^$', views.index),
     url(r'^api/', include(router.urls)),
