@@ -1,6 +1,6 @@
 $(function () {
     $.ajax({
-        url: baseUrl + '/investment/check/',
+        url: '/api/news/',
         type: 'GET',
         data: {
             power: sessionStorage.power
