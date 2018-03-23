@@ -17,6 +17,9 @@ class StandardResultsSetPagination(PageNumberPagination):
 def index(request):
     return render(request, 'index/index.html', context={})
 
+def news(request):
+    return render(request, 'index/news.html', context={})
+
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
     queryset = models.News_center.objects.all()
