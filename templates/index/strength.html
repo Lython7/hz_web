@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>服务-禾中产品销售有限公司</title>
+		{% include 'index/head.html' %}
+		<link rel="stylesheet" type="text/css" href={% static 'index/css/strength.css' %}/>
+	</head>
+	<body>
+		{% include 'index/header.html' %}
+		<div class="banner">
+			<img src={% static 'index/img/home_banner.jpg' %}/>
+		</div>
+		<section>
+			<div class="content">
+				<div class="cont">网点布局</div>
+				<div class="conWrap">
+					<img src={% static 'index/img/wdbj.jpg' %}/>
+				</div>
+				<div class="cont">物流配送</div>
+				<div class="conWrap">
+					<img src={% static 'index/img/wlps.jpg' %}/>
+				</div>
+				<div class="cont">共享平台</div>
+				<div class="conWrap">
+					<img src={% static 'index/img/gxpt.jpg' %}/>
+				</div>
+				<div class="tname">禾中伙伴——禾中加盟、拓店、会员体系（开店赋能、拓店提成、消费享利）</div>
+				<div class="linkList">
+					<img src={% static 'index/img/hzbl.jpg' %}/>
+					<img class="cen" src={% static 'index/img/hzcs.jpg' %}/>
+					<img src={% static 'index/img/hzyx.jpg' %}/>
+				</div>
+				<div class="tname">秉承禾中控股集团的商业理念打造线下智慧门店</div>
+				<div class="secEnd"></div>
+			</div>
+		</section>
+		{% include 'index/footer.html' %}
+	</body>
+</html>
