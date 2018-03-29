@@ -50,9 +50,9 @@ def newsshow(request):
     queryset1 = models.News_center.objects.filter(display_area=1).first()
     queryset2 = models.News_center.objects.filter(display_area=2)[0]
     queryset3 = models.News_center.objects.filter(display_area=2)[1]
-    dic = {'first': queryset1,
-        'second': queryset2,
-        'third':queryset3}
+    dic = {'first': json.dumps(queryset1),
+        'second': json.dumps(queryset2),
+        'third':json.dumps(queryset3)}
     return HttpResponse(json.dumps(dic), content_type='application/json')
 
 
