@@ -5,7 +5,7 @@ $(function () {
         type: 'GET',
         success: function(data) {
             console.log(data);
-            pipeDataShow(data, callback);
+
         },
         error: function(xhr, textStatus) {
             alert('加载失败，请稍后再试！');
