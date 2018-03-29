@@ -37,7 +37,7 @@ def about(request):
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
-    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2))
+    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
     serializer_class = serializers.NewsSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination
@@ -50,10 +50,15 @@ def newsshow(request):
     queryset1 = models.News_center.objects.filter(display_area=1).first()
     queryset2 = models.News_center.objects.filter(display_area=2)[0]
     queryset3 = models.News_center.objects.filter(display_area=2)[1]
-    dic = {'first': queryset1,
-        'second': queryset2,
-        'third':queryset3}
-    return HttpResponse(json.dumps(dic), content_type='application/json')
+    serializer1 = serializers.NewsSerializer(queryset1)
+    serializer2 = serializers.NewsSerializer(queryset2)
+    serializer3 = serializers.NewsSerializer(queryset3)
+    tmp_dic = {
+        'first': serializer1.data,
+        'second': serializer2.data,
+        'third': serializer3.data,
+    }
+    return HttpResponse(json.dumps(tmp_dic), content_type='application/json')
 
 
 
