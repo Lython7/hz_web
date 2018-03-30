@@ -37,22 +37,35 @@ def about(request):
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
-    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
+    # queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
     serializer_class = serializers.NewsSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination
+
+    def get_queryset(self):
+        queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
+        for i in queryset:
+            print(i)
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
 
 
 def newsshow(request):
-    queryset1 = models.News_center.objects.filter(display_area=1).first()
+    queryset1 = models.News_center.objects.filter(display_area=1).last()
     queryset2 = models.News_center.objects.filter(display_area=2)[0]
     queryset3 = models.News_center.objects.filter(display_area=2)[1]
+    if len(queryset1.news_content) >= 150:
+        queryset1.news_content = queryset1.news_content[:150]
+    if len(queryset2.news_content) >= 150:
+        queryset2.news_content = queryset2.news_content[:150]
+    if len(queryset3.news_content) >= 150:
+        queryset3.news_content = queryset3.news_content[:150]
     serializer1 = serializers.NewsSerializer(queryset1)
     serializer2 = serializers.NewsSerializer(queryset2)
     serializer3 = serializers.NewsSerializer(queryset3)
+
+
     tmp_dic = {
         'first': serializer1.data,
         'second': serializer2.data,
