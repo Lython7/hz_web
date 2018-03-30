@@ -37,14 +37,26 @@ def about(request):
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
-    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
+    queryset = models.News_center.objects.all().order_by('-id')
     serializer_class = serializers.NewsSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination
     #
     # def get_queryset(self):
-    #     queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
-    #
+    #     queryset = models.News_center.objects.all().order_by('-id')
+    #     for query in queryset:
+    #         # print(query.news_image1)
+    #         query.news_image1 = '/media/' + str(query.news_image1)
+    #         if query.news_image2:
+    #             query.news_image2 = '/media/' + str(query.news_image2)
+    #         if query.news_image3:
+    #             query.news_image3 = '/media/' + str(query.news_image3)
+    #         if query.news_image4:
+    #             query.news_image4 = '/media/' + str(query.news_image4)
+    #         if query.news_image5:
+    #             query.news_image5 = '/media/' + str(query.news_image5)
+    #         # print(query.news_image1)
+    #     return queryset
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
@@ -71,8 +83,6 @@ def newsshow(request):
         'third': serializer3.data,
     }
     return HttpResponse(json.dumps(tmp_dic), content_type='application/json')
-
-
 
 
 
