@@ -1,7 +1,7 @@
 $(function () {
     navIndex(1);
     $.ajax({
-        url: 'api/newslist/',
+        url: '../api/newslist/',
         type: 'GET',
         success: function(data) {
             console.log(data);
@@ -17,8 +17,8 @@ $(function () {
 function callback(data) {
     var oNews = document.getElementsByClassName('news_')[0];
     var newsht='';
-    for(var item in data){
-        newsht += htadd(data[item]);
+    for(var item in data.results){
+        newsht += htadd(data.results[item]);
     }
     oNews.innerHTML=newsht;
     imgSize();
