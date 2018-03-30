@@ -14,12 +14,12 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^head/', views.head, name='head'),
     url(r'^news/', views.news, name='news'),
-    url(r'^api/newsinfo/', views.newsshow, name='newsinfo'),
+
     url(r'^ability/', views.ability, name='ability'),
     url(r'^strength/', views.strength, name='strength'),
     url(r'^about/', views.about, name='about'),
-
-    url(r'api/news/', newslist, name='newslist'),
+    url(r'^api/newsinfo/', views.newsshow, name='newsinfo'),
+    url(r'api/newslist/', newslist, name='newslist'),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
