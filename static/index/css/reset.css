@@ -56,6 +56,19 @@ a{
 	background-color: #779c37;
 }
 
+.banner{
+	width: 100%;
+	padding-top: 80px;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
 .foot{
 	width: 100%;
 	background-color: #377c3f;
