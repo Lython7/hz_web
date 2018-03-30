@@ -1,5 +1,5 @@
 $(function () {
-    navIndex(0);
+    navIndex(1);
     $.ajax({
         url: '/api/newsinfo/',
         type: 'GET',
@@ -14,7 +14,6 @@ $(function () {
         }
     });
 });
-
 function callback(data) {
     var oNews = document.getElementsByClassName('news_')[0];
     var newsht='';
