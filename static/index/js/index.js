@@ -18,9 +18,9 @@ $(function () {
 function callback(data) {
     var oNews = document.getElementsByClassName('news_')[0];
     var newsht='';
-    for(var item in data){
-        newsht += htadd(data[item]);
-    }
+    newsht += htadd(data['first']);
+    newsht += htadd(data['second']);
+    newsht += htadd(data['third']);
     oNews.innerHTML=newsht;
     imgSize();
 }

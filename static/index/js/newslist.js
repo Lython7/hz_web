@@ -8,7 +8,7 @@ function htadd(data) {
     var ImgUrls = imgUrl.join('/');
 	ht+='<img src="/static/' + ImgUrls + '"/></div><div class="con_right">';
 	ht+='<a class="tit" href="newsDetails.html">' + data.news_title + '</a>';
-	ht+='<a class="con" href="newsDetails.html">' + data.news_content + '</a></div></div></div>';
+	ht+='<div class="con"><a href="newsDetails.html">' + data.news_content + '</a></div></div></div></div>';
 	return ht;
 }
 function imgSize() {

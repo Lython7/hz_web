@@ -41,15 +41,22 @@
     width: 100%;
     color: #000;
 }
-.news_ .con_right a.con{
+.news_ .con_right .con{
     width: 100%;
     padding-top: 6px;
-	color: #333;
-	font-size: 18px;
-	display: block;
     text-indent: 2em;
+	height: 100px;
+	line-height: 33px;
+	overflow: hidden;
 }
-.news_ .con_right a.con:hover{text-decoration: underline;}
+.news_ .con_right .con a{
+	color: #666;
+	font-size: 18px;
+}
+.news_ .con_right .con a:hover{
+	text-decoration: underline;
+	color: #333;
+}
 .news_ .first{
 	border-bottom: 2px solid #7cc062;
 	padding-bottom: 7px;

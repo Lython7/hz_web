@@ -1,7 +1,7 @@
 $(function () {
     navIndex(1);
     $.ajax({
-        url: '/api/newsinfo/',
+        url: 'api/newslist/',
         type: 'GET',
         success: function(data) {
             console.log(data);
