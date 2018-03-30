@@ -9,6 +9,9 @@ from rest_framework.documentation import include_docs_urls
 newslist = views.NewsViewSet.as_view({
     'get': 'list',
 })
+newsdetail = views.NewsViewSet.as_view({
+    'get': 'reterieve',
+})
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
@@ -18,8 +21,11 @@ urlpatterns = [
     url(r'^ability/', views.ability, name='ability'),
     url(r'^strength/', views.strength, name='strength'),
     url(r'^about/', views.about, name='about'),
+
+
     url(r'^api/newsinfo/', views.newsshow, name='newsinfo'),
-    url(r'api/newslist/', newslist, name='newslist'),
+    url(r'^api/newslist/', newslist, name='newslist'),
+    url(r'^api/news/(?P[0-9]+)/', newsdetail, name='newsdetail'),
     # url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 

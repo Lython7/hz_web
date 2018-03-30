@@ -37,15 +37,14 @@ def about(request):
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
-    # queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
+    queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
     serializer_class = serializers.NewsSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination
-
-    def get_queryset(self):
-        queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
-        for i in queryset:
-            print(i)
+    #
+    # def get_queryset(self):
+    #     queryset = models.News_center.objects.filter(Q(display_area=1) | Q(display_area=2)).order_by('created_time')
+    #
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
