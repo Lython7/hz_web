@@ -1,7 +1,7 @@
 $(function () {
     navIndex(1);
-    /*$.ajax({
-        url: '../api/newslist/',
+    $.ajax({
+        url: '../api/news/' + localStorage.getItem('newsId'),
         type: 'GET',
         success: function(data) {
             console.log(data);
@@ -12,7 +12,7 @@ $(function () {
             console.log(xhr);
             console.log(textStatus);
         }
-    });*/
+    });
 });
 /*
 function callback(data) {
