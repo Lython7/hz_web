@@ -45,6 +45,8 @@ class NewsViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     pagination_class = StandardResultsSetPagination
     #
+
+
     # def get_queryset(self):
     #     queryset = models.News_center.objects.all().order_by('-id')
     #     for query in queryset:

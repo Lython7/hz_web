@@ -15,7 +15,7 @@ newslist = views.NewsViewSet.as_view({
     'get': 'list',
 })
 newsdetail = views.NewsViewSet.as_view({
-    'get': 'reterieve',
+    'get': 'retrieve',
 })
 
 urlpatterns = [
@@ -35,7 +35,7 @@ urlpatterns = [
 
     # url(r'^api/', include(router.urls)),
 
-    url(r'^media/index/(?P<path>.*)', serve, {'document_root': BASE_DIR}),
+    url(r'^media/index/news_pic/(?P<path>.*)', serve, {'document_root': r'media\\index\\news_pic\\'}),
 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
