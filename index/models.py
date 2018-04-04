@@ -29,65 +29,68 @@ class News_center(models.Model):
     display_area = models.IntegerField(choices=choices_area, default=2)
     news_time = models.DateTimeField(verbose_name='新闻时间', null=False)
 
-    news_content1 = models.TextField(max_length=1024, verbose_name='新闻内容段落1', null=True, blank=True, default='')
+    newslist_img = models.ImageField(upload_to='index/news_pic', verbose_name='新闻列表小图', null=False)# 路径
+
     news_image1 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落1上', null=True, blank=True, default='')# 路径
+    news_content1 = models.TextField(max_length=1024, verbose_name='新闻内容段落1', null=False)
 
-    news_content2 = models.TextField(max_length=1024, verbose_name='新闻内容段落2', null=True, blank=True, default='')
     news_image2 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落2上', null=True, blank=True, default='')# 路径
+    news_content2 = models.TextField(max_length=1024, verbose_name='新闻内容段落2', null=True, blank=True, default='')
 
-    news_content3 = models.TextField(max_length=1024, verbose_name='新闻内容段落3', null=True, blank=True, default='')
     news_image3 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落3上', null=True, blank=True, default='')# 路径
+    news_content3 = models.TextField(max_length=1024, verbose_name='新闻内容段落3', null=True, blank=True, default='')
 
-    news_content4 = models.TextField(max_length=1024, verbose_name='新闻内容段落4', null=True, blank=True, default='')
     news_image4 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落4上', null=True, blank=True, default='')# 路径
+    news_content4 = models.TextField(max_length=1024, verbose_name='新闻内容段落4', null=True, blank=True, default='')
 
-    news_content5 = models.TextField(max_length=1024, verbose_name='新闻内容段落5', null=True, blank=True, default='')
     news_image5 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落5上', null=True, blank=True, default='')# 路径
+    news_content5 = models.TextField(max_length=1024, verbose_name='新闻内容段落5', null=True, blank=True, default='')
 
-    news_content6 = models.TextField(max_length=1024, verbose_name='新闻内容段落6', null=True, blank=True, default='')
     news_image6 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落6上', null=True, blank=True, default='')# 路径
+    news_content6 = models.TextField(max_length=1024, verbose_name='新闻内容段落6', null=True, blank=True, default='')
 
-    news_content7 = models.TextField(max_length=1024, verbose_name='新闻内容段落7', null=True, blank=True, default='')
     news_image7 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落7上', null=True, blank=True, default='')# 路径
+    news_content7 = models.TextField(max_length=1024, verbose_name='新闻内容段落7', null=True, blank=True, default='')
 
-    news_content8 = models.TextField(max_length=1024, verbose_name='新闻内容段落8', null=True, blank=True, default='')
     news_image8 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落8上', null=True, blank=True, default='')# 路径
+    news_content8 = models.TextField(max_length=1024, verbose_name='新闻内容段落8', null=True, blank=True, default='')
 
-    news_content9 = models.TextField(max_length=1024, verbose_name='新闻内容段落9', null=True, blank=True, default='')
     news_image9 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落9上', null=True, blank=True, default='')# 路径
+    news_content9 = models.TextField(max_length=1024, verbose_name='新闻内容段落9', null=True, blank=True, default='')
 
-    news_content10 = models.TextField(max_length=1024, verbose_name='新闻内容段落10', null=True, blank=True, default='')
     news_image10 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落10上', null=True, blank=True, default='')# 路径
+    news_content10 = models.TextField(max_length=1024, verbose_name='新闻内容段落10', null=True, blank=True, default='')
 
-    news_content11 = models.TextField(max_length=1024, verbose_name='新闻内容段落11', null=True, blank=True, default='')
     news_image11 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落11上', null=True, blank=True, default='')# 路径
+    news_content11 = models.TextField(max_length=1024, verbose_name='新闻内容段落11', null=True, blank=True, default='')
 
-    news_content12 = models.TextField(max_length=1024, verbose_name='新闻内容段落12', null=True, blank=True, default='')
     news_image12 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落12上', null=True, blank=True, default='')# 路径
+    news_content12 = models.TextField(max_length=1024, verbose_name='新闻内容段落12', null=True, blank=True, default='')
 
-    news_content13 = models.TextField(max_length=1024, verbose_name='新闻内容段落13', null=True, blank=True, default='')
     news_image13 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落13上', null=True, blank=True, default='')# 路径
+    news_content13 = models.TextField(max_length=1024, verbose_name='新闻内容段落13', null=True, blank=True, default='')
 
-    news_content14 = models.TextField(max_length=1024, verbose_name='新闻内容段落14', null=True, blank=True, default='')
     news_image14 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落14上', null=True, blank=True, default='')# 路径
+    news_content14 = models.TextField(max_length=1024, verbose_name='新闻内容段落14', null=True, blank=True, default='')
 
-    news_content15 = models.TextField(max_length=1024, verbose_name='新闻内容段落15', null=True, blank=True, default='')
     news_image15 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落15上', null=True, blank=True, default='')# 路径
+    news_content15 = models.TextField(max_length=1024, verbose_name='新闻内容段落15', null=True, blank=True, default='')
 
-    news_content16 = models.TextField(max_length=1024, verbose_name='新闻内容段落16', null=True, blank=True, default='')
     news_image16 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落16上', null=True, blank=True, default='')# 路径
+    news_content16 = models.TextField(max_length=1024, verbose_name='新闻内容段落16', null=True, blank=True, default='')
 
-    news_content17 = models.TextField(max_length=1024, verbose_name='新闻内容段落17', null=True, blank=True, default='')
     news_image17 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落17上', null=True, blank=True, default='')# 路径
+    news_content17 = models.TextField(max_length=1024, verbose_name='新闻内容段落17', null=True, blank=True, default='')
 
-    news_content18 = models.TextField(max_length=1024, verbose_name='新闻内容段落18', null=True, blank=True, default='')
     news_image18 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落18上', null=True, blank=True, default='')# 路径
+    news_content18 = models.TextField(max_length=1024, verbose_name='新闻内容段落18', null=True, blank=True, default='')
 
-    news_content19 = models.TextField(max_length=1024, verbose_name='新闻内容段落19', null=True, blank=True, default='')
     news_image19 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落19上', null=True, blank=True, default='')# 路径
+    news_content19 = models.TextField(max_length=1024, verbose_name='新闻内容段落19', null=True, blank=True, default='')
 
-    news_content20 = models.TextField(max_length=1024, verbose_name='新闻内容段落20', null=True, blank=True, default='')
     news_image20 = models.ImageField(upload_to='index/news_pic', verbose_name='新闻图片段落20上', null=True, blank=True, default='')# 路径
+    news_content20 = models.TextField(max_length=1024, verbose_name='新闻内容段落20', null=True, blank=True, default='')
+
 
 
     created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='编辑时间', null=False)

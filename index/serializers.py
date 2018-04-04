@@ -11,6 +11,9 @@ class NewsSerializer(serializers.ModelSerializer):
             'news_title',
             'display_area',
             'news_time',
+
+            'newslist_img',
+
             'news_image1',
             'news_image2',
             'news_image3',
