@@ -84,6 +84,13 @@ def newsshow(request):
     }
     return HttpResponse(json.dumps(tmp_dic), content_type='application/json')
 
+def my_image(request, pic_name):
+    pic_name = request.data.get('pic_name')
+    basepath = r'/media/index/news_pic/'
+    path = basepath + pic_name
+    image_data = open(path,"rb").read()
+    return HttpResponse(image_data,mimetype="image/png")
+
 
 
 # 人力资源、招兵买马

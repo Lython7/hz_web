@@ -156,5 +156,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') # 部署时需要使用
 # 文件、图片上传路径
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\','/')
 

@@ -1,6 +1,9 @@
+
 from django.conf.urls import url, include
 
 from django.views.static import serve
+
+from hz_web.settings import BASE_DIR
 from . import views
 from rest_framework.routers import DefaultRouter
 from rest_framework.documentation import include_docs_urls
@@ -28,9 +31,10 @@ urlpatterns = [
     url(r'^api/newsinfo/', views.newsshow, name='newsinfo'),
     url(r'^api/newslist/', newslist, name='newslist'),
     url(r'^api/news/(?P<pk>[0-9]+)/', newsdetail, name='newsdetail'),
+
     # url(r'^api/', include(router.urls)),
 
-    url(r'^media/index/news_pic/(?P<path>.*)', serve, name='imageserve'),
+    url(r'^(?P<path>.*)', serve, {'document_root': BASE_DIR}),
 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
