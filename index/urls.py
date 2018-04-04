@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^head/', views.head, name='head'),
     url(r'^news/', views.news, name='news'),
+    url(r'^newsdetail/', views.newscenter, name='newscenter'),
 
     url(r'^ability/', views.ability, name='ability'),
     url(r'^strength/', views.strength, name='strength'),
@@ -34,7 +35,7 @@ urlpatterns = [
 
     # url(r'^api/', include(router.urls)),
 
-    url(r'^(?P<path>.*)', serve, {'document_root': BASE_DIR}),
+    url(r'^media/index/(?P<path>.*)', serve, {'document_root': BASE_DIR}),
 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 

@@ -34,6 +34,9 @@ def strength(request):
     return render(request, 'index/strength.html', context={})
 def about(request):
     return render(request, 'index/about.html', context={})
+def newscenter(request):
+    return render(request, 'index/newsdetail.html', context={})
+
 
 # 新闻中心
 class NewsViewSet(viewsets.ModelViewSet):
@@ -84,12 +87,13 @@ def newsshow(request):
     }
     return HttpResponse(json.dumps(tmp_dic), content_type='application/json')
 
-def my_image(request, pic_name):
-    pic_name = request.data.get('pic_name')
-    basepath = r'/media/index/news_pic/'
-    path = basepath + pic_name
-    image_data = open(path,"rb").read()
-    return HttpResponse(image_data,mimetype="image/png")
+
+# def my_image(request, pic_name):
+#     pic_name = request.data.get('pic_name')
+#     basepath = r'/media/index/news_pic/'
+#     path = basepath + pic_name
+#     image_data = open(path,"rb").read()
+#     return HttpResponse(image_data,mimetype="image/png")
 
 
 
