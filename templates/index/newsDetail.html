@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情-禾中产品销售有限公司</title>
+    {% include 'index/head.html' %}
+</head>
+<body>
+    {% include 'index/header.html' %}
+    <section>
+        <div class="content">
+            <!--新闻动态-->
+            <div class="newsTitle">
+                <div class="left">新闻动态>>新闻详情</div>
+            </div>
+            <!--新闻-->
+            <div class="details">
+                <h1 class="title">新年贺词</h1>
+                <div class="time">2018-2-15</div>
+                <p>旧岁已展千重锦，新年再进百尺杆。回顾过去，成功或汗水都已逝去，展望未来，新的一年我们意气风发。2017年禾中产品销售有限公司（以下简称禾中销售）全体员工同舟共济，用实力与勇气在短短半年内创造奇迹。</p>
+                <div class="img">
+                    <img src="img/news.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'index/footer.html' %}
+</body>
+<script src={% static 'index/js/newsDetail.js' %} type="text/javascript" charset="utf-8"></script>
+</html>
