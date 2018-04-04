@@ -12,8 +12,8 @@ function htadd(data) {
 	    ht+='<img src="' + data.news_image1 + '"/></div><div class="con_right">';
     }
 
-	ht+='<a class="tit" href="newsDetails.html">' + data.news_title + '</a>';
-	ht+='<div class="con"><a href="newsDetails.html">' + data.news_content + '</a></div></div></div></div>';
+	ht+='<a class="tit" href="newsDetails.html" onclick="detailNav(' + data.id + ')">' + data.news_title + '</a>';
+	ht+='<div class="con"><a href="newsDetails.html" onclick="detailNav(' + data.id + ')">' + data.news_content + '</a></div></div></div></div>';
 	return ht;
 }
 function imgSize() {
@@ -26,4 +26,7 @@ function imgSize() {
             imgs[i].style.width='100%';
         }
     }
+}
+function detailNav(newsId) {
+    localStorage.setItem('newsId', ''+newsId);
 }

@@ -1,11 +1,9 @@
-
 .content{
 	width: 84%;
 	margin: 80px auto;
 	padding: 10px 0;
 	overflow: hidden;
 }
-
 .content .newsTitle{
 	padding: 24px 0;
 	height: 36px;
@@ -23,43 +21,29 @@
 	font-size: 18px;
 	padding: 10px 4%;
 }
+.content .details h1.title{
+	text-align: center;
+	font-size: 30px;
+}
+.content .details .time{
+	text-align: right;
+	color: #aaa;
+    font-size: 16px;
+}
 .content .details p{
 	text-indent: 2em;
 	padding: 8px 0;
 	line-height: 28px;
 }
-.content .details .img1{
+.content .details .img{
 	padding: 30px 0;
 }
-.content .details .img1 img{
+.content .details .img img{
 	display: block;
 	margin: 0 auto;
 	width: 68%;
 }
-.content .details .img2 img{
-	display: block;
-	margin: 0 auto;
-	width: 90%;
-}
-.content .details .img2 .tit{
-	text-align: center;
-	padding-top: 8px;
-}
 
-
-
-
-@media all and (max-width:1230px){
-	.header .logo span{
-		display: none;
-	}
-	.news_ .con_right a.con{
-		font-size: 18px;
-	}
-	.foot .conBottom .infoRight{
-		width: 50%;
-	}
-}
 @media all and (max-width:920px){
 	.content{
 		margin-top: 160px;
